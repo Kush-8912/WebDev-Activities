@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Gallery</title>
+<style>
+.dog-gallery{
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:15px;
+}
+.dog-gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dog-gallery img:hover{
+border:3px solid black;
+box-shadow:0 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media(max-width:768px){
+.dog-gallery{
+grid-template-columns:repeat(2, 1fr);
+}
+}
+@media(max-width:480px){
+.dog-gallery{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+<h1>Dog Gallery</h1>
+<div class="dog-gallery">
+<img src="https://www.rd.com/wp-content/uploads/2018/02/30_Adorable-Puppy-Pictures-that-Will-Make-You-Melt_124167640_YamabikaY.jpg?fit=700%2C467" alt="Dog-1">
+<img src="https://static.vecteezy.com/system/resources/previews/008/951/892/large_2x/cute-puppy-pomeranian-mixed-breed-pekingese-dog-run-on-the-grass-with-happiness-photo.jpg" alt="Dog-2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg" alt="Dog-3">
+<img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?cs=srgb&dl=pexels-simonakidric-2607544.jpg&fm=jpg" alt="Dog-4">
+<img src="https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?cs=srgb&dl=pexels-hnoody93-58997.jpg&fm=jpg" alt="Dog-5">
+<img src="https://images.pexels.com/photos/3726314/pexels-photo-3726314.jpeg?cs=srgb&dl=pexels-jhelmuth-3726314.jpg&fm=jpg" alt="Dog-6">
+<img src="https://www.usatoday.com/gcdn/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2018/06/13/USATODAY/usatsports/pug-tiny-dog-breeds.jpg?width=1200&disable=upscale&format=pjpg&auto=webp" alt="Dog-7">
+<img src="https://img.freepik.com/premium-photo/close-up-portrait-cute-dog-puppy-cavalier-king-charles-spaniel-blenheim_95685-2033.jpg?w=360" alt="Dog-8">
+<img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/puppy-1047521_640.jpg" alt="Dog-9">
+</div>
+</body>
+</html>

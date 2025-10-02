@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grids</title>
+<style>
+.container{
+padding:30px;
+height:1000px;
+width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+border:6px solid orange;
+}
+.box1{
+grid-column:1/4;
+border:10px solid purple;
+}
+.box2{
+grid-row:2/4;
+border:10px solid green;
+}
+.box3{
+border:10px solid blue;
+width:300px;
+margin-left:50px;
+}
+.box4{
+border:10px solid blue;
+width:300px;
+margin-left:50px;
+}
+.box5{
+grid-row:2/4;
+grid-column:3/4;
+border:10px solid black;
+}
+</style>
+</head>
+<body>
+<div class = "container">
+<div class="box box1"></div>
+<div class="box box2"></div>
+<div class="box box3"></div>
+<div class="box box4"></div>
+<div class="box box5"></div>
+</div>
+</body>
+</html>

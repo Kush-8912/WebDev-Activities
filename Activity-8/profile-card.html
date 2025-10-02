@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+<style>
+.card{
+width:400px;
+margin:auto;
+background:white;
+border-radius:16px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+display:flex;
+flex-wrap:wrap;
+}
+.card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+}
+.info{
+padding:10px;
+}
+.info h2{
+font-size:1.5rem;
+font-weight:bold;
+}
+.buttons a{
+display:inline-block;
+background:blue;
+color:white;
+padding:8px 12px;
+margin:5px;
+border-radius:6px;
+text-decoration:none;
+}
+@media(max-width:640px){
+.card{
+flex-direction:column;
+width:70vw;
+text-align:center;
+}
+.buttons a{
+display:block;
+width:90%;
+margin:10px auto;
+}
+}
+</style>
+</head>
+<body>
+<div class="card">
+<img src="https://ccbs.uci.edu/wp-content/uploads/sites/3/2022/03/no-user-image-icon-27.png" alt="Profile Image">
+<div class="info">
+<h2>Kushagra Aggarwal</h2>
+<p>Currently Learning Web Development.</p>
+<p>Loves clean, creative layouts and good coffee!</p>
+<div class="buttons">
+<a href="#">Contact</a>
+<a href="#">Portfolio</a>
+</div>
+</div>
+</div>
+</body>
+</html>
